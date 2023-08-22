@@ -1,9 +1,82 @@
 <html>
     <head>
+        <!DOCTYPE html>
+        <html lang="en">
         <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Structure Example</title>
     </head>
-    <body>
-        <!-- Left hand side of scoreboard -->
+    <body>        
+
+    <div class="flex-container">      
+        <div class="left-score">
+            <!-- First Paragraph -->
+            <p class="paragraph-title">HOME</p>
+        
+            <!-- Second Paragraph -->
+            <p class="paragraph-score-home" id="sumHomevalue">00</p>
+        
+            <!-- Horizontal List of 3 Buttons -->
+            <div class="button-container">
+                <button onclick="addOnehome()">+ 1</button>
+                <button onclick="addTwohome()">+ 2</button>
+                <button onclick="addThreehome()">+ 3</button>
+            </div>
+        </div>
+    
+
+        <div class="right-score">
+            <!-- First Paragraph -->
+            <p class="paragraph-title">GUEST</p>
+        
+            <!-- Second Paragraph -->
+            <p class="paragraph-score-away">70</p>
+        
+            <!-- Horizontal List of 3 Buttons -->
+            <div class="button-container">
+                <button>+ 1</button>
+                <button>+ 2</button>
+                <button>+ 3</button>
+            </div>
+        </div>
+
+
+    </div>  
+            <!-- Horizontal Row (Empty) -->
+            <div class="empty-row"></div>
+            <script src="index.js"></script>
+        </body>
+        </html>
+         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- Left hand side of scoreboard 
         <div class="container-scoreleft">
             <div>
                 <h3>HOME</h3>
@@ -11,8 +84,8 @@
                 <div class="scoreboard">
                     <p>0</p>
                 </div>
-                
-        <!-- Right hand side of scoreboard -->
+
+         Right hand side of scoreboard 
         <div class="container-scoreright">
              <div>
                 <h3>GUEST</h3>
@@ -23,5 +96,5 @@
 
         </div>
         <script src="index.js"></script>
-    </body>
+    </body> -->
 </html>

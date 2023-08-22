@@ -1,15 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+
+
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 5px;  /* Add some padding to the body for better visualization */
+    background-color: blue;
 }
 
-.container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.scoreboard {
-    background-color: black;
-    padding: 50px;
+.paragraph-title {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size: 40px;
     color: white;
-    font-size: 45px;
+}
+
+
+.paragraph-score-home {
+    border-radius: 10px;
+    color: red;
+    background-color: black;
+    font-size: 6em;
+    text-align: center;
+    font-family: "Quantico", sans-serif;
+    padding: 50px;
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+.paragraph-score-away {
+    border-radius: 10px;
+    color: red;
+    background-color: black;
+    font-size: 6em;
+    text-align: center;
+    font-family: "Quantico", sans-serif;
+    padding: 50px;
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+
+.flex-container {
+    display: flex;    /* Makes its children lay out in a row */
+    padding: 50px;
+    gap: 40px;
+
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;     /* Space between button container and the empty row */
+    gap: 20px;
+}
+
+.button-container button { 
+    margin-bottom: 20px;     /* Space between button container and the empty row */
+    border:2px solid white;
+    padding: 6px;
+    font-size: 1.4rem;
+    background-color: blue; 
+    color: white;
+    text-align: center;
+}
+
+.button-container button:hover {
+    box-shadow: 0 0 0 3px white;
+    font-size: 1.4rem;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    text-align: center;
+}
+
+
+.empty-row {
+    border-top: 1px solid black;  /* Displaying the horizontal row */
+    width: 100%;                  /* Span across the full width */
+    height: 20px;                 /* Adjust height if you need more or less space below the row */
+}
+
+
+
+.left-score .right-score {
+    width: 50%;
+
 }
