@@ -16,7 +16,7 @@ let awayScore = 0
 
 //functions for away scoreboard //
 function addOnehome () {
-homeScore += 1
+homeScore += +1
 sumEl.innerText = homeScore
     }
 
